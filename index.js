@@ -1,9 +1,22 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let backString = '';
+
+  for (i = word.length - 1; i >= 0; i--){
+    backString += word[i]
+  }
+  if (backString === word){
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
   Add your pseudocode here
+  initialize an empty array to hold each value
+  iterate through the string from its end
+  and compare it to the original string
 */
 
 /*
